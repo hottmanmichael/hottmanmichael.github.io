@@ -8,7 +8,7 @@ var Home = React.createClass({
 		};
 	},
 	down: function(){
-		if (this.state.number < 1){
+		if (this.state.number == 0) {
 			this.setState({
 				response:"NOOOO, that's too low!" 
 			});
