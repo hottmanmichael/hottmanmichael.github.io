@@ -1,0 +1,43 @@
+$BGColor: rgba(255, 255, 255, 0.57);
+$darken: darken($BGColor, 75%);
+
+.menu-box-outer {
+   position: absolute;
+   bottom: 0;
+   font-size: 30px;
+   height: 75px;
+   width: 80%;
+   left: 10%;
+   text-align: center;
+   background-color: $BGColor;
+   border-top-left-radius: 2px;
+   border-top-right-radius: 2px;
+   & .menu-box-inner {
+      position: relative;
+      height: 100%;
+   }
+   & .menu-list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      height: 100%;
+      position: relative;
+      & .menu-item {
+         cursor: pointer;
+         height: 100%;
+         text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.89);
+         transition: background-color 200ms ease-in-out;
+         margin: 0;
+         &:hover {
+            transition: background-color 50ms ease-in-out;
+            background-color: $darken;
+         }
+         & .menu-item-text {
+            margin: 0;
+            top: 20px;
+            position: relative;
+         }
+      }
+   }
+}
