@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/hottmanmichael/hottmanmichael.github.io#readme",
   "dependencies": {
+    "classnames": "^2.2.3",
     "compass": "^0.1.1",
     "gulp": "^3.9.1",
+    "jquery": "^2.2.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0",

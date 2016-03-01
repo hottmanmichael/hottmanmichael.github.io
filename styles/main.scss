@@ -6,7 +6,6 @@
 * {
    box-sizing: border-box;
 }
-
 html, body {
    height: 100vh;
    margin: 0;
@@ -15,6 +14,7 @@ html, body {
    right: 0;
    bottom: 0;
    position: fixed;
+   background-color: black;
 }
 
 #app {
@@ -33,20 +33,31 @@ html, body {
    overflow-x: hidden;
    overflow-y: auto;
    margin: 0;
+   font-size: 16px;
+
+   .font-small {
+      font-size: 12px;
+   }
+   .font-large {
+      font-size: 20px;
+   }
 
    /* Main Content styling*/
    & .title-box-name {
       position: relative;
       top: 50px;
-      & .title {
+      .title {
          font-size: 50px;
          font-family: 'Ubuntu', sans-serif;
          text-align: center;
       }
    }
-
-
-
+   .open-modal-button {
+      height: 50px;
+      width: 100px;
+      border-radius: 2px;
+      border: solid 1px black;
+   }
 
    /* Start Parallax Styling */
    & .layer-group {
@@ -62,13 +73,15 @@ html, body {
             height: 100%;
             position: relative;
             top: 50px;
+            max-width: 100%
          }
          &.top {
             background-image: url('../../public/img/brick.jpeg');
             background-position: 0 55%;
          }
          &.resume {
-            background-image: url('../../public/img/nepal.jpeg');
+            background-image: url('../../public/img/coffee.jpeg');
+            background-position: 0 30%;
          }
          &.bottom {
             background-image: url('../../public/img/moutainsunset.jpeg');
@@ -77,7 +90,7 @@ html, body {
       }
       & .layer-upper {
          transform: translateZ(0);
-         background-color: grey;
+         background-color: #A0A083;
          height: 144%;
          box-shadow: 0px 0px 6px rgba(0,0,0,.5)
       }

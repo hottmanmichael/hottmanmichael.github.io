@@ -33,12 +33,12 @@ var ModalWindow = React.createClass({
 	render: function(){
 		var children = React.Children.map(this.props.children, this.mapChildren);
 		return (
-			<button onClick={this.toggle} {...this.props}>
+			<div onClick={this.toggle} {...this.props}>
 				{this.props.label}
 				<Modal className="modal-inner" isOpen={this.state.open} close={this.toggle.bind(this,false)}>
 					{children}
 				</Modal>
-			</button>
+			</div>
 		)
 	}
 });

@@ -20,6 +20,7 @@ $hoverDarken: darken($InnerBackgroundColor, 10%);
             box-shadow: 0 2px 3px 0 rgba(48, 48, 48, 1);
             border-radius: 2px;
             transition: all .3s ease-in-out;
+            width: auto;
         }
     }
     & .modal-inner {
