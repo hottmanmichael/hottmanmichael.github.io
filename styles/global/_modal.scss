@@ -24,7 +24,7 @@ $hoverDarken: darken($InnerBackgroundColor, 10%);
         }
     }
     & .modal-inner {
-        transform: scale(.6) translateY(-100px);
+        transform: translateY(-50px);
         transition: all .3s ease-in-out;
     }
 }

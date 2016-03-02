@@ -2,6 +2,7 @@
 @import './global/menu';
 @import './global/modal';
 @import './global/resume-builder';
+@import 'test';
 
 * {
    box-sizing: border-box;
@@ -33,24 +34,32 @@ html, body {
    overflow-x: hidden;
    overflow-y: auto;
    margin: 0;
+   /* Page Default Font Size */
    font-size: 16px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
 
    .font-small {
-      font-size: 12px;
+      font-size: 1em;
    }
    .font-large {
-      font-size: 20px;
+      font-size: 2.5em;
+      font-family: 'Ubuntu', sans-serif;
+   }
+   .font-center {
+      text-align: center;
+   }
+   .font-page-header {
+      font-size: 3em;
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center;
+      font-weight: 500;
    }
 
    /* Main Content styling*/
    & .title-box-name {
       position: relative;
       top: 50px;
-      .title {
-         font-size: 50px;
-         font-family: 'Ubuntu', sans-serif;
-         text-align: center;
-      }
    }
    .open-modal-button {
       height: 50px;
@@ -91,7 +100,7 @@ html, body {
       & .layer-upper {
          transform: translateZ(0);
          background-color: #A0A083;
-         height: 144%;
+         height: 110%;
          box-shadow: 0px 0px 6px rgba(0,0,0,.5)
       }
    }
